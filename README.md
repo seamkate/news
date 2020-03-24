@@ -1,0 +1,2 @@
+# news
+Page of news
