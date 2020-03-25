@@ -1,19 +1,38 @@
 $dark-blue: #00122f;
 $blue: #85afda;
+$gray: #f9f9f9;
+$dark-gray: #9a9aa6;
 
-* {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    color: black;
-
+html {
     box-sizing: border-box;
 }
 
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
+.main {
+    background-color: $gray;
+}
 
 h1 {
     font-size: 30px;
@@ -32,12 +51,12 @@ p {
 
 .top {
     background-color: $dark-blue;
-    padding: 15px 0 15px; 
-    margin-bottom: 30px;
+    padding: 20px 0 15px; 
+    margin-bottom: 50px;
 }
 
 .top__content {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +74,7 @@ p {
 // Header styles start
 
 .header {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .header__info {
@@ -63,14 +82,89 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 45px;
+}
+
+.header__weather {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__weather-icon {
+    width: 30px;
+}
+
+.header__weather-temp {
+    padding-left: 40px;
+}
+
+.header__search {
+    background-color: $gray;
+    border-radius: 5px;
+    color: white;
 }
 
 .header__search-botton {
-    background: url(/img/svg/icon-search.svg) no-repeat ;
+    background: url(/img/svg/icon-search.svg) no-repeat;
 }
 
-.header__nav {
-    display: inline-block;
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-// Header styles end
+.header__item {
+    padding-right: 45px;
+}
+
+// Header styles end 
+
+// Main styles start
+
+.main {
+    padding-top: 20px;
+    background-color: $gray;
+}
+
+// Left news block styles start
+
+.news-block {
+    float: left;
+    width: 260px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+
+
+// Left news block styles end
+
+// Middle block styles start
+.middle-block {
+    width: 500px;
+    margin-right: 15px;
+}
+// Middle block styles end
+
+// Right block styles start
+.right-block {
+    float: right;
+    width: 260px;
+}
+
+// Right block styles end
+
+// Main styles end
+
+// Footer styles start
+
+.footer {
+    display: block;
+}
+
+// Footer styles end
