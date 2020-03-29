@@ -34,7 +34,7 @@ a {
 .top {
   background-color: #00122f;
   padding: 20px 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .top__content {
@@ -63,7 +63,7 @@ a {
 }
 
 .header {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .header__info {
@@ -82,7 +82,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+
+.header__city {
+  display: block;
+  color: #85afda;
+  border: 0;
+  border-bottom: 1px dashed;
 }
 
 .header__weather {
@@ -101,7 +108,8 @@ a {
 }
 
 .header__weather-temp {
-  padding-left: 40px;
+  padding-left: 20px;
+  color: #9a9aa6;
 }
 
 .header__search-input {
@@ -109,19 +117,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 14px 50px;
+  padding-right: 130px;
   font-size: 13px;
-  border: 0;
+  border: 15px #f9f9f9 solid;
   border-radius: 35px;
-  background-color: #f9f9f9;
-}
-
-.header__search-botton {
-  display: block;
-  margin-left: -40px;
-  border: 0;
-  border-radius: 35px;
-  background: url(/img/svg/icon-search.svg) no-repeat;
+  background: #f9f9f9 url(/img/icon-search.PNG) no-repeat right;
+  background-size: 25px;
 }
 
 .header__list {
@@ -214,9 +215,7 @@ a {
   margin-left: -3px;
   background: url(/img/icon-slash.PNG) no-repeat left top;
   background-size: auto 12px;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  vertical-align: top;
 }
 
 .news-block__theme {
